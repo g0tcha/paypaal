@@ -11,6 +11,11 @@
 		D2DD95FA284BD42800D462E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD95F9284BD42800D462E9 /* ContentView.swift */; };
 		D2DD95FC284BD42A00D462E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2DD95FB284BD42A00D462E9 /* Assets.xcassets */; };
 		D2DD95FF284BD42A00D462E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2DD95FE284BD42A00D462E9 /* Preview Assets.xcassets */; };
+		D2DD960B284BD6CE00D462E9 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD960A284BD6CE00D462E9 /* SignInView.swift */; };
+		D2DD9629284E4A3800D462E9 /* MainButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD9628284E4A3800D462E9 /* MainButtonStyle.swift */; };
+		D2DD962D284E4C0300D462E9 /* MainField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD962C284E4C0300D462E9 /* MainField.swift */; };
+		D2DD9630284E4DC300D462E9 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD962F284E4DC300D462E9 /* Color+Extension.swift */; };
+		D2DD9632284E4EC600D462E9 /* SecondaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD9631284E4EC600D462E9 /* SecondaryButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		D2DD95F9284BD42800D462E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D2DD95FB284BD42A00D462E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2DD95FE284BD42A00D462E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D2DD960A284BD6CE00D462E9 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		D2DD9628284E4A3800D462E9 /* MainButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonStyle.swift; sourceTree = "<group>"; };
+		D2DD962C284E4C0300D462E9 /* MainField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainField.swift; sourceTree = "<group>"; };
+		D2DD962F284E4DC300D462E9 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		D2DD9631284E4EC600D462E9 /* SecondaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,8 @@
 		D2DD95F6284BD42800D462E9 /* Paypaal */ = {
 			isa = PBXGroup;
 			children = (
+				D2DD9626284E4A1300D462E9 /* Core */,
+				D2DD9605284BD60800D462E9 /* Domain */,
 				D2DD95F7284BD42800D462E9 /* PaypaalApp.swift */,
 				D2DD95F9284BD42800D462E9 /* ContentView.swift */,
 				D2DD95FB284BD42A00D462E9 /* Assets.xcassets */,
@@ -65,6 +77,89 @@
 				D2DD95FE284BD42A00D462E9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D2DD9605284BD60800D462E9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D2DD9606284BD60E00D462E9 /* Login */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D2DD9606284BD60E00D462E9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D2DD9607284BD62400D462E9 /* Models */,
+				D2DD9608284BD63C00D462E9 /* Scenes */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D2DD9607284BD62400D462E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D2DD9608284BD63C00D462E9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D2DD9609284BD6C200D462E9 /* SignIn */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D2DD9609284BD6C200D462E9 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				D2DD960A284BD6CE00D462E9 /* SignInView.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		D2DD9626284E4A1300D462E9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D2DD9627284E4A2D00D462E9 /* Views */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D2DD9627284E4A2D00D462E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2DD962E284E4DB800D462E9 /* Extensions */,
+				D2DD962B284E4BED00D462E9 /* ViewModifier */,
+				D2DD962A284E4BE400D462E9 /* ButtonStyle */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D2DD962A284E4BE400D462E9 /* ButtonStyle */ = {
+			isa = PBXGroup;
+			children = (
+				D2DD9628284E4A3800D462E9 /* MainButtonStyle.swift */,
+				D2DD9631284E4EC600D462E9 /* SecondaryButtonStyle.swift */,
+			);
+			path = ButtonStyle;
+			sourceTree = "<group>";
+		};
+		D2DD962B284E4BED00D462E9 /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				D2DD962C284E4C0300D462E9 /* MainField.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		D2DD962E284E4DB800D462E9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D2DD962F284E4DC300D462E9 /* Color+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +233,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2DD95FA284BD42800D462E9 /* ContentView.swift in Sources */,
+				D2DD962D284E4C0300D462E9 /* MainField.swift in Sources */,
+				D2DD960B284BD6CE00D462E9 /* SignInView.swift in Sources */,
+				D2DD9629284E4A3800D462E9 /* MainButtonStyle.swift in Sources */,
 				D2DD95F8284BD42800D462E9 /* PaypaalApp.swift in Sources */,
+				D2DD9630284E4DC300D462E9 /* Color+Extension.swift in Sources */,
+				D2DD9632284E4EC600D462E9 /* SecondaryButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
