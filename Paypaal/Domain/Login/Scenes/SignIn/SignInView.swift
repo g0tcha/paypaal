@@ -7,9 +7,21 @@
 
 import SwiftUI
 
+protocol SignInDisplayLogic {
+    func setSignedIn(_ isSignedIn: Bool)
+}
+
+extension SignInView: SignInDisplayLogic {
+    
+    func setSignedIn(_ isSignedIn: Bool) {
+        self.isSignedIn = isSignedIn
+    }
+}
+
 struct SignInView: View {
     @State var username: String
     @State var password: String
+    @State var isSignedIn = false
     
     var body: some View {
         NavigationView {

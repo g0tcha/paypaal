@@ -13,7 +13,6 @@ protocol RequestProtocol {
     var requestType: RequestType { get }
     var params: [String: Any] { get }
     var urlParams: [String: String?] { get }
-    func getUrlRequest() -> URLRequest
 }
 
 // MARK: - RequestProtocol default implementation

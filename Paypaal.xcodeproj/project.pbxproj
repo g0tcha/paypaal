@@ -21,6 +21,14 @@
 		D2DD963D284E59EB00D462E9 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD963C284E59EB00D462E9 /* RequestProtocol.swift */; };
 		D2DD963F284E5A2500D462E9 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD963E284E5A2500D462E9 /* RequestType.swift */; };
 		D2DD9641284E5A9F00D462E9 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD9640284E5A9F00D462E9 /* APIConstants.swift */; };
+		D2DD9644284E603300D462E9 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD9643284E603300D462E9 /* SignInModel.swift */; };
+		D2DD9646284E603E00D462E9 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD9645284E603E00D462E9 /* SignInInteractor.swift */; };
+		D2DD9648284E604D00D462E9 /* SignInConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD9647284E604D00D462E9 /* SignInConfigurator.swift */; };
+		D2DD964B284E617600D462E9 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD964A284E617600D462E9 /* LoginWorker.swift */; };
+		D2DD964D284E620000D462E9 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD964C284E620000D462E9 /* SignInPresenter.swift */; };
+		D2DD964F284E64F000D462E9 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD964E284E64F000D462E9 /* RequestManager.swift */; };
+		D2DD9652284E657400D462E9 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD9651284E657400D462E9 /* DataParser.swift */; };
+		D2DD9654284E667800D462E9 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD9653284E667800D462E9 /* LoginRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +47,14 @@
 		D2DD963C284E59EB00D462E9 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		D2DD963E284E5A2500D462E9 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
 		D2DD9640284E5A9F00D462E9 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		D2DD9643284E603300D462E9 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
+		D2DD9645284E603E00D462E9 /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
+		D2DD9647284E604D00D462E9 /* SignInConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInConfigurator.swift; sourceTree = "<group>"; };
+		D2DD964A284E617600D462E9 /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		D2DD964C284E620000D462E9 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		D2DD964E284E64F000D462E9 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		D2DD9651284E657400D462E9 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		D2DD9653284E667800D462E9 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +116,7 @@
 		D2DD9606284BD60E00D462E9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				D2DD9649284E616400D462E9 /* Workers */,
 				D2DD9607284BD62400D462E9 /* Models */,
 				D2DD9608284BD63C00D462E9 /* Scenes */,
 			);
@@ -125,6 +142,10 @@
 			isa = PBXGroup;
 			children = (
 				D2DD960A284BD6CE00D462E9 /* SignInView.swift */,
+				D2DD9643284E603300D462E9 /* SignInModel.swift */,
+				D2DD9645284E603E00D462E9 /* SignInInteractor.swift */,
+				D2DD9647284E604D00D462E9 /* SignInConfigurator.swift */,
+				D2DD964C284E620000D462E9 /* SignInPresenter.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -186,6 +207,7 @@
 			children = (
 				D2DD9636284E581800D462E9 /* APIManager.swift */,
 				D2DD9638284E598E00D462E9 /* NetworkError.swift */,
+				D2DD964E284E64F000D462E9 /* RequestManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -193,6 +215,7 @@
 		D2DD963A284E59B500D462E9 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				D2DD9650284E656600D462E9 /* Parser */,
 				D2DD963B284E59E400D462E9 /* Request */,
 				D2DD9634284E57DE00D462E9 /* Network */,
 				D2DD9640284E5A9F00D462E9 /* APIConstants.swift */,
@@ -207,6 +230,23 @@
 				D2DD963E284E5A2500D462E9 /* RequestType.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		D2DD9649284E616400D462E9 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				D2DD964A284E617600D462E9 /* LoginWorker.swift */,
+				D2DD9653284E667800D462E9 /* LoginRequest.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		D2DD9650284E656600D462E9 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				D2DD9651284E657400D462E9 /* DataParser.swift */,
+			);
+			path = Parser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,16 +321,24 @@
 			files = (
 				D2DD9637284E581800D462E9 /* APIManager.swift in Sources */,
 				D2DD95FA284BD42800D462E9 /* ContentView.swift in Sources */,
+				D2DD9648284E604D00D462E9 /* SignInConfigurator.swift in Sources */,
+				D2DD9654284E667800D462E9 /* LoginRequest.swift in Sources */,
 				D2DD962D284E4C0300D462E9 /* MainField.swift in Sources */,
+				D2DD9652284E657400D462E9 /* DataParser.swift in Sources */,
 				D2DD960B284BD6CE00D462E9 /* SignInView.swift in Sources */,
 				D2DD9629284E4A3800D462E9 /* MainButtonStyle.swift in Sources */,
 				D2DD95F8284BD42800D462E9 /* PaypaalApp.swift in Sources */,
 				D2DD9639284E598E00D462E9 /* NetworkError.swift in Sources */,
+				D2DD964D284E620000D462E9 /* SignInPresenter.swift in Sources */,
+				D2DD9644284E603300D462E9 /* SignInModel.swift in Sources */,
 				D2DD9630284E4DC300D462E9 /* Color+Extension.swift in Sources */,
 				D2DD9641284E5A9F00D462E9 /* APIConstants.swift in Sources */,
 				D2DD963F284E5A2500D462E9 /* RequestType.swift in Sources */,
 				D2DD9632284E4EC600D462E9 /* SecondaryButtonStyle.swift in Sources */,
+				D2DD9646284E603E00D462E9 /* SignInInteractor.swift in Sources */,
+				D2DD964F284E64F000D462E9 /* RequestManager.swift in Sources */,
 				D2DD963D284E59EB00D462E9 /* RequestProtocol.swift in Sources */,
+				D2DD964B284E617600D462E9 /* LoginWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
